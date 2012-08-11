@@ -53,7 +53,9 @@ I figured out how to do it from here:
 http://ubuntuforums.org/showthread.php?t=234588
 
 On the server, you will need to enable WOL using the ethtool program.
-By default, it was not installed on my system, but a simple apt-get did the trick.
+By default, it was not installed on my system, but a simple apt-get did the trick. 
+_Note: After a little experimentation, i found that this command was not needed.
+Its possible this command is only needed once and it is stored in the firmware. But i no longer beleive this command is needed._
 
     Server:/$ sudo ethtool -s eth0 wol g
 
