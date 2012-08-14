@@ -45,7 +45,7 @@ The python code is as follows:
 
     import socket
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    s.sendto('\xff'*6 + '\x00\x02\xb3\x07\xb6\xd1'*16, ('192.168.1.255', 80))
+    s.sendto('\xff'*6 + '\x00\x02\xb3\x07\xb6\xd1'*16, ('192.168.0.255', 80))
 
 ### Server Scheduler
 A custom daemon process will need to be written that powers on and off the other servers as needed.

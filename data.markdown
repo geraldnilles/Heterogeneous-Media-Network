@@ -1,8 +1,11 @@
 # The Data
 
 ## Hardware
+A whole bunch of 1TB hard drives.  
+A dual core processor.
 
 ## OS
+Ubuntu Server
 
 ## Additional SW
 
@@ -14,6 +17,19 @@ Used to share files with the network.
 
 ### Apache WSGI Python 
 Web Server that will be used to talk with the leader.
-The leader will be able to shut down the server by loading a specific page.
+THere will only be a few web pages:
+
+* RAID Manager
+    * View the status of the RAID array
+    * Add/Remove Disks
+* Halt
+    * THis will be a page that when called, will halt the server
+* Data Manager
+    * View stats (% used)
+    * Modify Samba/NFS shares
 
 ## Configuration
+
+### IP Address
+This server's IP address will end in 201
+
