@@ -29,6 +29,7 @@ In order to wake up other devices, the wakeonlan package will need to be install
 I will also look to see if its possible to send this magic packet using pure python.
 According to Wikipedia, the WOL packet can be set with any network protocol.
 The format is as follows:
+
     0xFF 0xFF 0xFF 0xFF 0xFF 0xFF ; 6 bytes of FF
     [MAC address]                 ; the target MAC address
     [MAC address]
@@ -41,6 +42,7 @@ The total should be 102 bytes.
 Traditionally, the packet is sent using a UDP datagram to port 7 or port 9.
 
 The python code is as follows:
+
     import socket
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.sendto('\xff'*6 + '\x00\x02\xb3\x07\xb6\xd1'*16, ('192.168.1.255', 80))
