@@ -21,6 +21,11 @@ This computer will have Ubuntu Server as its base.
 Webpages will be hosted using Apache's daemon and will be scripted using Python.
 The mod-python package must be installed.
 
+The web server will have the following pages:
+* Ping
+    * This will be a simple Ping page.  The other servers will use this to make sure the leader is still alive.
+    * Used by the other system's Watchdog daemon.
+
 ### MySQL
 The main MySQL database will be hosted and served by this PC
 

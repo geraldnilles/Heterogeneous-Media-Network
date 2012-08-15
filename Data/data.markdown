@@ -27,6 +27,12 @@ THere will only be a few web pages:
 * Data Manager
     * View stats (% used)
     * Modify Samba/NFS shares
+* Ping
+    * This page will be used by other servers to see if the server is running.
+
+### Watchdog
+This script will ping the leader server periodically to make sure everying is ok.
+If the leader script does not respond, the data will shutdown.
 
 ## Configuration
 
