@@ -69,3 +69,24 @@ The only argument of this command is the MAC address of the server you want to w
 
     Leader:/$ wakeonlan 12:34:56:78:90
 
+# Quick Chart
+This will be a quick configuration reference chart
+
+<table>
+    <tr>
+        <th> </th>
+        <th>Leader</th>
+        <th>Data</th>
+        <th>Muscle</th>
+        <th>Frontend</th>
+    </tr>
+    <tr>
+        <th>IP Address</th>
+        <td>192.168.0.200</td>
+        <td>192.168.0.201</td>
+        <td>192.168.0.202</td>
+        <td>191.168.0.210</td>
+    </tr>
+
+</table>
+
